@@ -5,30 +5,63 @@
 }
 
 body {
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 nav {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 50px;
+  z-index: 100;
 }
 
 li {
   position: relative;
   display: inline-block;
-  border-radius: 50%;
-  margin: 3vh 1vh;
   height: 50px;
   width: 50px;
-  background-color: lightgreen;
+  margin: 3vh 0;
   text-align: center;
 }
 li>a {
   position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 2em;
+  box-shadow: 1px 1px 2px grey;
+}
+li>a:active {
+  box-shadow: -2px 2px 2px black;
+}
+
+.scarpe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-transform: uppercase;
+}
+.container {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-decoration: none;
-  font-size: 2em;
+  text-align: center;
+
+}
+#scarpa1 {
+  background-color: lightgreen;
+}
+#scarpa2 {
+  background-color: lightblue;
+}
+#scarpa3 {
+  background-color: lightgrey;
+}
+h1::before {
+  content: "il nostro modello di punta";
+  text-transform: uppercase;
 }
